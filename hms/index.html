@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta id="_moz_html_fragment">
+<style>
+body{
+    /* The image used */
+    background-image: url("hs.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js">
+        </script>
+</head>
+<body>
+<div style="text-align: center;"><br>
+<br>
+<br>
+<br>
+<big><big><strong>HOSPITAL</strong>&nbsp; <strong>MANAGEMENT SYSTEM</strong><br>
+<br>
+<br>
+</big></big>
+<form method="post" action="login.php">
+<center>
+<table width="30%">
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>USERNAME</strong><br>
+</td>
+<td><input name="username" type="text"><br>
+</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PASSWORD</strong><br>
+</td>
+<td><input name="password" type="password"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<input value="LOGIN" name="submit" type="submit"><br>
+</form>
+<br>
+<form method="post" action="register.html">
+<input value="New User ?" name="newuser" type="submit"><br>
+</center>
+</form>
+<big><big><br>
+</big></big></div>
+</body>
+<script>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+</script>
+</html>
+
+
